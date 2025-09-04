@@ -20,53 +20,53 @@ Node.js >= 14
 
 npm or yarn
 
-### MongoDB instance (local or cloud, e.g., MongoDB Atlas)
+##### MongoDB instance (local or cloud, e.g., MongoDB Atlas)
 
 🚀 Installation
 
-### Clone the repository:
+##### Clone the repository:
 
-git clone <your-repo-url>
+git clone https://github.com/DILHT/EMS1.git
 cd employee-management-api
 
 
-## Install dependencies:
+#### Install dependencies:
 
 npm install
 
 
-## Create a .env file in the root directory and add:
+#### Create a .env file in the root directory and add:
 
 PORT=3000
-MONGODB_URL=<your_mongodb_connection_string>
+MONGODB_URL=
 
 ## 🏃 Running the API
 
-## Start the server in development mode (with nodemon):
+##### Start the server in development mode (with nodemon):
 
 npm run dev
 
 
-## Or start normally:
+#### Or start normally:
 
 node server.js
 
 
-## The API will run at:
+#### The API will run at:
 
 http://localhost:3000
 
-## 📦 API Endpoints
+#### 📦 API Endpoints
 
-## Base URL: http://localhost:3000/api/employees
+##### Base URL: http://localhost:3000/api/employees
 
-Method	Endpoint	Description
+#### Method	Endpoint	Description
 GET	/	Get all employees
 GET	/:id	Get employee by ID
 POST	/	Create a new employee
 PUT	/:id	Update an existing employee
 DELETE	/:id	Delete an employee
-## 📝 Request Body for POST / PUT
+#### 📝 Request Body for POST / PUT
 {
   "name": "John Doe",
   "email": "johndoe@example.com",
@@ -75,7 +75,7 @@ DELETE	/:id	Delete an employee
   "salary": 50000
 }
 
-## ⚠️ Error Handling
+### ⚠️ Error Handling
 
 Returns 404 if employee not found
 
@@ -83,7 +83,7 @@ Returns 400 for invalid request data
 
 Returns 500 for server errors
 
-## 🛠 Tech Stack
+### 🛠 Tech Stack
 
 Node.js
 
@@ -95,7 +95,7 @@ dotenv
 
 CORS
 
-## 🌟 Future Improvements
+### 🌟 Future Improvements
 
 Add authentication & authorization
 
@@ -105,13 +105,13 @@ Add input validation with Joi or express-validator
 
 Implement unit testing with Jest
 
-## 👤 Author
+### 👤 Author
 
-## Daniel Kasambala
+#### Daniel Kasambala
 
 📧 Email: danielkasambala51@gmail.com
 💻 GitHub: www.github.com/DILHT
 
-## 📝 License
+### 📝 License
 
 This project is licensed under the MIT License.
